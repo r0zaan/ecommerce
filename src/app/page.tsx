@@ -1,19 +1,10 @@
 'use client'
 
-import { useState } from 'react'
-import { Dialog, DialogPanel } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import ProductList from './_components/product-list'
 import { products } from '@/constants/products'
 import CategoryBlock from './_components/category-block'
 import CategoryBlockTwo from './_components/category-block-two'
 
-const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
-]
 const categories = [
   {
     id: 1,
@@ -44,8 +35,6 @@ const categories = [
   },
 ]
 export default function Home() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-
   return (
     <>
       <main>
